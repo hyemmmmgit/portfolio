@@ -4,50 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="/responsive.css" />
     <title>프론트엔드 개발자 김혜민의 포트폴리오</title>
+    <script
+      src="https://kit.fontawesome.com/22318e0f40.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="">메인</a></li>
-          <li><a href="">자기소개</a></li>
-          <li><a href="">프로젝트</a></li>
+          <li><a href="#">메인</a></li>
+          <li><a>자기소개</a></li>
+          <li><a>프로젝트</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>신입 프론트엔드 개발자 김혜민입니다.</h1>
+      <div class="main">
+        <h1>신입 프론트엔드 개발자 김혜민입니다.</h1>
+      </div>
       <article class="aboueMe">
         <h2>자기소개</h2>
-        <blockquote>" <strong>도전정신</strong> 을 바탕으로 한 <strong> 성실함</strong>으로 매일 발전하는 개발자가 되겠습니다."</blockquote>
+        <blockquote>
+          " <strong>도전정신</strong> 을 바탕으로 한
+          <strong> 성실함</strong>으로 매일 발전하는 개발자가 되겠습니다."
+        </blockquote>
         <p>
           안녕하세요. 성실한 자세로 차근차근 실력을 쌓아나가고 있는 신입
-          프론트엔드 웹 개발자 김혜민입니다.
-        <p>  저는 개발과 관련 없는 전공을 했지만, 우연히 듣게 된 인터넷 코딩 강의를
-          계기로 프로그래밍에 매력을 느껴 국비지원 '프론트엔드 웹개발자 양성
-          과정'까지 수료하게 되었습니다. <br> 그리고 현재는 과감히 진로를 바꿔 꾸준히 개발실력을 쌓으며
-          정식으로 프론트엔드 웹 개발자가 되는 것에 도전하고 있습니다.</p> 아직
-          내세울 수 있는 개발 경력은 없지만 그렇기 때문에 새로운 것들을 빨리 흡수할
-          수 있는 것은 오히려 장점이 될 수도 있다고 생각합니다. <br>저의
-          성장 가능성을 포트폴리오를 통해 확인해주세요! 감사합니다:)
+          프론트엔드 웹 개발자 김혜민입니다. 저는 개발과 관련 없는 전공을
+          했지만, 우연히 듣게 된 인터넷 코딩 강의를 계기로 프로그래밍에 매력을
+          느껴 국비지원 '프론트엔드 웹개발자 양성 과정'까지 수료하게 되었습니다.
+          그리고 현재는 과감히 진로를 바꿔 꾸준히 개발실력을 쌓으며 정식으로
+          프론트엔드 웹 개발자가 되는 것에 도전하고 있습니다. 아직 내세울 수
+          있는 개발 경력은 없지만 그렇기 때문에 새로운 것들을 빨리 흡수할 수
+          있는 것은 오히려 장점이 될 수도 있다고 생각합니다. 저의 성장 가능성을
+          포트폴리오를 통해 확인해주세요! 감사합니다:)
         </p>
         <h2>SKILLS</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>React</li>
+        </ul>
       </article>
       <article class="projects">
         <h2>프로젝트</h2>
         <section>
-          
+          <div class="FirstLine">
+            <h3>마이 블로그</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="desc">
+            <h4>2022.07</h4>
+          </div>
         </section>
         <section>
-         <a href="">  <img src="/src/playsw.png" alt="클론코딩" width="28%" ></a> 
-          <a href="">  <img src="/src/playswR.png" alt="클론코딩 반응형" width="28%"></a>
+          <div class="FirstLine">
+            <h3>투두리스트</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="desc">
+            <h4>2022.07</h4>
+          </div>
         </section>
-        <section></section>
+        <section>
+          <div class="FirstLine">
+            <h3>'소프트웨어야 놀자' 클론코딩</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="desc">
+            <h4>2022.06</h4>
+            <a
+              href="https://hyemmmmgit.github.io/clone-playsw/"
+              target="_blank"
+            >
+              <img src="./src/playsw.png" alt="클론코딩" height="280px"
+            /></a>
+            <a
+              href="https://hyemmmmgit.github.io/clone-playsw/"
+              target="_blank"
+            >
+              <img src="./src/playswR.png" alt="클론코딩 반응형" height="280px"
+            /></a>
+            <p>
+              지디웹 디자인 어워드 선정작인 '소프트웨어야 놀자'라는 웹사이트를
+              클론코딩하였습니다. HTML, SCSS, JavaScript를 사용하여
+              구현했습니다. 반응형 웹도 함께 제작하면서 반응형 웹 개발에 대한
+              이해 또한 더욱 깊어졌습니다.
+            </p>
+            <div class="dlBox">
+              <dl>
+                <dt>주요 기능</dt>
+                <dd>
+                  <ul>
+                    <li>스크롤 양에 따른 fixed 아이콘 생성&제거</li>
+                    <li>버튼 클릭에 의해 제어되는 슬라이더</li>
+                    <li>동적인 애니메이션 디자인</li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>URL</dt>
+                <dd>
+                  <a
+                    href="https://hyemmmmgit.github.io/clone-playsw/"
+                    target="_blank"
+                    >https://hyemmmmgit.github.io/clone-playsw/</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>GitHub</dt>
+                <dd>
+                  <a
+                    href="https://github.com/hyemmmmgit/clone-playsw"
+                    target="_blank"
+                    >https://github.com/hyemmmmgit/clone-playsw</a
+                  >
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="FirstLine">
+            <h3>포트폴리오 웹사이트</h3>
+            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <div class="desc">
+            <h4>2022.07</h4>
+            <a href=""><img src="" alt="" /></a>
+            <a href=""><img src="" alt="" /></a>
+            <p>
+              현재 보고 계시는 포트폴리오 웹사이트를 HTML, SCSS, JavaScript를
+              사용하여 제작했습니다. 화려한 디자인보다는 가독성 위주의 디자인과
+              웹 표준의 정석에 따르려고 노력했습니다. 그러면서 한 번 더 기초를
+              탄탄히 하는데 도움이 되었다고 생각합니다.
+            </p>
+            <div class="dlBox">
+              <dl>
+                <dt>주요 기능</dt>
+                <dd>
+                  <ul>
+                    <li>클릭에 의해 제어되는 open/close toggle 기능</li>
+                    <li></li>
+                    <li>웹 접근성을 높이기 위한 시맨틱 태그 활용</li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>URL</dt>
+                <dd>
+                  <a
+                    href="https://hyemmmmgit.github.io/clone-playsw/"
+                    target="_blank"
+                    >https://hyemmmmgit.github.io/clone-playsw/</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>GitHub</dt>
+                <dd>
+                  <a
+                    href="https://github.com/hyemmmmgit/clone-playsw"
+                    target="_blank"
+                    >https://github.com/hyemmmmgit/clone-playsw</a
+                  >
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </section>
       </article>
     </main>
     <footer>
-      <div class="bottomMenu"> <b>Contact</b>  hye04069@gmail.com</div>
+      <div class="bottomMenu"><b>Contact</b> hye04069@gmail.com</div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

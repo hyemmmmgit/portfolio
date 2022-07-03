@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #daf1de;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  font-weight: bold;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 10vh;
+  background-color: #daf1de;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+header nav ul li {
+  display: inline-block;
+  flex: 1;
+}
+header nav ul li a {
+  color: #85d4be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: medium dashed #96dfd8;
+  transition: 0.28s;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  color: black;
+  background-color: #96dfd8;
+}
+header nav ul li a:active {
+  font-weight: bolder;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+main article {
+  box-shadow: 2px -2px 5px 0px #aee6cb;
+  width: 90vw;
+  margin-bottom: 180px;
+  padding: 28px;
+}
+main .aboueMe p {
+  text-align: justify;
+  line-height: 24px;
+  margin: 28px;
+}
+main .aboueMe ul {
+  background-color: #d6e9aa;
+  border-radius: 28px;
+  padding: 28px;
+  margin: 28px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+main .projects section {
+  background-color: #d6e9aa;
+  margin: 28px;
+  padding: 28px;
+  cursor: pointer;
+}
+main .projects section .FirstLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .projects section .FirstLine .fa-angle-up {
+  display: none;
+}
+main .projects section .desc {
+  display: none;
+  text-decoration: none;
+}
+main .projects section .desc a {
+  float: left;
+  margin-right: 14px;
+}
+main .projects section .desc a:last-of-type {
+  margin-right: 28px;
+}
+main .projects section .desc .dlBox {
+  clear: left;
+  display: flex;
+  justify-content: space-between;
+}
+main .projects section .desc .dlBox dl dt {
+  font-weight: bold;
+}
+main .projects section .desc .dlBox dl dd a:hover {
+  text-decoration: underline;
+}
+main .projects section .desc.visible {
+  display: block;
+}
+main .projects section:first-of-type {
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+main .projects section:last-of-type {
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+main .projects p {
+  text-align: justify;
+  line-height: 24px;
+}
+
+footer {
+  font-size: large;
+  padding: 28px;
+  border-top: medium dashed #96dfd8;
+}
+footer .bottomMenu {
+  text-align: center;
+}
+footer .bottomMenu b {
+  margin-right: 28px;
+}/*# sourceMappingURL=index.css.map */

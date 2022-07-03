@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  main .projects .dlBox {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=responsive.css.map */
