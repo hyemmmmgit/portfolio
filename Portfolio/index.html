@@ -24,7 +24,14 @@
     </header>
     <main>
       <div class="main">
-        <h1>신입 프론트엔드 개발자 김혜민입니다.</h1>
+        <div class="animation">
+          <h1>
+            신입 프론트엔드 개발자
+            <span id="name">김혜민</span>
+            입니다.
+          </h1>
+        </div>
+        <i class="fa-solid fa-arrow-down"></i>
       </div>
       <article class="aboueMe">
         <h2>자기소개</h2>
@@ -36,13 +43,27 @@
           안녕하세요. 성실한 자세로 차근차근 실력을 쌓아나가고 있는 신입
           프론트엔드 웹 개발자 김혜민입니다. 저는 개발과 관련 없는 전공을
           했지만, 우연히 듣게 된 인터넷 코딩 강의를 계기로 프로그래밍에 매력을
-          느껴 국비지원 '프론트엔드 웹개발자 양성 과정'까지 수료하게 되었습니다.
-          그리고 현재는 과감히 진로를 바꿔 꾸준히 개발실력을 쌓으며 정식으로
-          프론트엔드 웹 개발자가 되는 것에 도전하고 있습니다. 아직 내세울 수
-          있는 개발 경력은 없지만 그렇기 때문에 새로운 것들을 빨리 흡수할 수
-          있는 것은 오히려 장점이 될 수도 있다고 생각합니다. 저의 성장 가능성을
-          포트폴리오를 통해 확인해주세요! 감사합니다:)
+          느껴 독학을 하다 국비지원 '프론트엔드 웹개발자 양성 과정'까지 수료하게
+          되었습니다. 그리고 현재는 과감히 진로를 바꿔 꾸준히 개발실력을 쌓으며
+          정식으로 프론트엔드 웹 개발자가 되는 것에 도전하고 있습니다. 아직
+          내세울 수 있는 개발 경력은 없지만 그렇기 때문에 새로운 것들을 빨리
+          흡수할 수 있는 것은 오히려 장점이 될 수도 있다고 생각합니다. 저의 성장
+          가능성을 포트폴리오를 통해 확인해주세요! 감사합니다:)
         </p>
+        <div class="dlBox">
+          <dl>
+            <dt>이름</dt>
+            <dd>김혜민</dd>
+          </dl>
+          <dl>
+            <dt>학력</dt>
+            <dd>추계예술대학교 작곡과 졸업</dd>
+          </dl>
+          <dl>
+            <dt>주소지</dt>
+            <dd>서울</dd>
+          </dl>
+        </div>
         <h2>SKILLS</h2>
         <ul>
           <li>HTML</li>
@@ -55,7 +76,7 @@
       </article>
       <article class="projects">
         <h2>프로젝트</h2>
-        <section>
+        <!-- <section>
           <div class="FirstLine">
             <h3>마이 블로그</h3>
             <i class="fa-solid fa-angle-down"></i>
@@ -63,16 +84,126 @@
           </div>
           <div class="desc">
             <h4>2022.07</h4>
+            <div class="imgBox">
+              <a
+                href="https://hyemmmmgit.github.io/clone-playsw/"
+                target="_blank"
+              >
+                <img src="./src/playsw.png" alt="스크린샷" height="280px" />
+              </a>
+              <div class="smallImgBox">
+                <div class="selected">
+                  <img src="./src/playsw.png" alt="스크린샷" />
+                </div>
+                <div>
+                  <img src="./src/playswR.png" alt="스크린샷" />
+                </div>
+              </div>
+            </div>
+            <p>
+              실시간으로 업데이트 되는 뉴스를 보며 기록하고 싶은 정보를 메모할
+              수 있는 웹사이트입니다. 외부 API를 연동하여 만든 뉴스 뷰어에 CRUD
+              기능이 구현된 메모장을 결합하여 <b>React</b>로 제작하였습니다.
+              디자인은 styled-components를 사용하여 작성했고, 기능 구현은 함수
+              컴포넌트를 사용했습니다.
+            </p>
+            <div class="dlBox">
+              <dl>
+                <dt>주요 기능</dt>
+                <dd>
+                  <ul>
+                    <li>스크롤 양에 따른 fixed 아이콘 생성&제거</li>
+                    <li>버튼 클릭에 의해 제어되는 슬라이더</li>
+                    <li>동적인 애니메이션 디자인</li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>URL</dt>
+                <dd>
+                  <a
+                    href="https://hyemmmmgit.github.io/clone-playsw/"
+                    target="_blank"
+                    >https://hyemmmmgit.github.io/clone-playsw/</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>GitHub</dt>
+                <dd>
+                  <a
+                    href="https://github.com/hyemmmmgit/clone-playsw"
+                    target="_blank"
+                    >https://github.com/hyemmmmgit/clone-playsw</a
+                  >
+                </dd>
+              </dl>
+            </div>
           </div>
-        </section>
+        </section> -->
         <section>
           <div class="FirstLine">
-            <h3>투두리스트</h3>
+            <h3>달력보며 일정 관리</h3>
             <i class="fa-solid fa-angle-down"></i>
             <i class="fa-solid fa-angle-up"></i>
           </div>
           <div class="desc">
             <h4>2022.07</h4>
+            <div class="imgBox">
+              <a href="https://hyemmmmgit.github.io/calendar/" target="_blank">
+                <img src="./src/달력.png" alt="스크린샷" height="280px" />
+              </a>
+              <div class="smallImgBox">
+                <div class="selected">
+                  <img src="./src/달력.png" alt="스크린샷" />
+                </div>
+                <div>
+                  <img src="./src/달력R.png" alt="스크린샷" />
+                </div>
+              </div>
+            </div>
+            <p>
+              달력을 보며 날짜를 누르면 그 날에 맞는 투두리스트를 작성할 수 있는
+              웹사이트입니다. Date() 생성자를 이용해 오늘의 날짜가 매일 업데이트
+              되는 달력과 CRUD 기능이 있는 투두 리스트를
+              <b>React</b>로 구현했습니다. 디자인은 <b> styled-components</b>를
+              활용하여 반응형 웹의 디자인까지 제작했습니다.
+            </p>
+            <div class="dlBox">
+              <dl>
+                <dt>주요 기능</dt>
+                <dd>
+                  <ul>
+                    <li>매일 오늘의 날짜가 업데이트 되는 달력</li>
+                    <li>CRUD 기능이 구현된 투두리스트</li>
+                    <li>
+                      달력에서 클릭한 날짜를 받아와 투두리스트에 반영할 수 있는
+                      기능
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>URL</dt>
+                <dd>
+                  <a
+                    href="https://hyemmmmgit.github.io/calendar/"
+                    target="_blank"
+                    >https://hyemmmmgit.github.io/calendar/</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>GitHub</dt>
+                <dd>
+                  <a
+                    href="https://github.com/hyemmmmgit/calendar"
+                    target="_blank"
+                    >https://github.com/hyemmmmgit/calendar</a
+                  >
+                </dd>
+              </dl>
+            </div>
           </div>
         </section>
         <section>
@@ -83,21 +214,25 @@
           </div>
           <div class="desc">
             <h4>2022.06</h4>
-            <a
-              href="https://hyemmmmgit.github.io/clone-playsw/"
-              target="_blank"
-            >
-              <img src="./src/playsw.png" alt="클론코딩" height="280px"
-            /></a>
-            <a
-              href="https://hyemmmmgit.github.io/clone-playsw/"
-              target="_blank"
-            >
-              <img src="./src/playswR.png" alt="클론코딩 반응형" height="280px"
-            /></a>
+            <div class="imgBox">
+              <a
+                href="https://hyemmmmgit.github.io/clone-playsw/"
+                target="_blank"
+              >
+                <img src="./src/playsw.png" alt="스크린샷" height="280px" />
+              </a>
+              <div class="smallImgBox">
+                <div class="selected">
+                  <img src="./src/playsw.png" alt="스크린샷" />
+                </div>
+                <div>
+                  <img src="./src/playswR.png" alt="스크린샷" />
+                </div>
+              </div>
+            </div>
             <p>
               지디웹 디자인 어워드 선정작인 '소프트웨어야 놀자'라는 웹사이트를
-              클론코딩하였습니다. HTML, SCSS, JavaScript를 사용하여
+              클론코딩하였습니다. <b> HTML, SCSS, JavaScript</b>를 사용하여
               구현했습니다. 반응형 웹도 함께 제작하면서 반응형 웹 개발에 대한
               이해 또한 더욱 깊어졌습니다.
             </p>
@@ -143,13 +278,28 @@
           </div>
           <div class="desc">
             <h4>2022.07</h4>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
+            <div class="imgBox">
+              <a
+                href="https://hyemmmmgit.github.io/clone-playsw/"
+                target="_blank"
+              >
+                <img src="./src/portfolio.png" alt="스크린샷" height="280px" />
+              </a>
+              <div class="smallImgBox">
+                <div class="selected">
+                  <img src="./src/portfolio.png" alt="스크린샷" />
+                </div>
+                <div>
+                  <img src="./src/portfolioR.png" alt="스크린샷" />
+                </div>
+              </div>
+            </div>
             <p>
-              현재 보고 계시는 포트폴리오 웹사이트를 HTML, SCSS, JavaScript를
-              사용하여 제작했습니다. 화려한 디자인보다는 가독성 위주의 디자인과
-              웹 표준의 정석에 따르려고 노력했습니다. 그러면서 한 번 더 기초를
-              탄탄히 하는데 도움이 되었다고 생각합니다.
+              현재 보고 계시는 포트폴리오 웹사이트를
+              <b> HTML, SCSS, JavaScript</b>를 사용하여 제작했습니다. 화려한
+              디자인보다는 가독성 위주의 디자인과 시맨틱 태그를 적극 활용하는 등
+              웹 표준의 정석에 따르려고 노력했습니다. 그러면서 한 번 더 웹
+              개발의 기초를 탄탄히 하는데 도움이 되었다고 생각합니다.
             </p>
             <div class="dlBox">
               <dl>
@@ -157,7 +307,10 @@
                 <dd>
                   <ul>
                     <li>클릭에 의해 제어되는 open/close toggle 기능</li>
-                    <li></li>
+                    <li>
+                      작은 사진을 클릭했을 때 메인 사진을 제어하여 크게 볼 수
+                      있는 기능
+                    </li>
                     <li>웹 접근성을 높이기 위한 시맨틱 태그 활용</li>
                   </ul>
                 </dd>
@@ -165,20 +318,16 @@
               <dl>
                 <dt>URL</dt>
                 <dd>
-                  <a
-                    href="https://hyemmmmgit.github.io/clone-playsw/"
-                    target="_blank"
-                    >https://hyemmmmgit.github.io/clone-playsw/</a
-                  >
+                  <a href="" target="_blank"></a>
                 </dd>
               </dl>
               <dl>
                 <dt>GitHub</dt>
                 <dd>
                   <a
-                    href="https://github.com/hyemmmmgit/clone-playsw"
+                    href="https://github.com/hyemmmmgit/portfolio"
                     target="_blank"
-                    >https://github.com/hyemmmmgit/clone-playsw</a
+                    >https://github.com/hyemmmmgit/portfolio</a
                   >
                 </dd>
               </dl>
@@ -190,6 +339,10 @@
     <footer>
       <div class="bottomMenu"><b>Contact</b> hye04069@gmail.com</div>
     </footer>
+    <!-- <script
+      src="https://kit.fontawesome.com/22318e0f40.js"
+      crossorigin="anonymous"
+    ></script> -->
     <script src="./index.js"></script>
   </body>
 </html>

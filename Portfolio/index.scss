@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@keyframes nameAnimation {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes mainA {
+  from {
+    width: 0;
+  }
+}
+@keyframes upDown {
+  to {
+    transform: translateY(28px);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
@@ -16,6 +31,7 @@ a {
 header {
   font-weight: bold;
   position: fixed;
+  z-index: 99;
   width: 100vw;
   top: 0;
   height: 10vh;
@@ -65,11 +81,33 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1 {
-      text-align: center;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    .animation {
+      display: flex;
+      h1 {
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        width: 511px;
+        animation: mainA 3s;
+        white-space: nowrap;
+        overflow: hidden;
+        span {
+          opacity: 1;
+          animation: nameAnimation 2.8s;
+          animation-delay: 3s;
+        }
+      }
+    }
+    i {
+      font-size: 28px;
+      color: #85d4be;
+      position: relative;
+      top: 210px;
+      z-index: -1;
+      animation: upDown 0.75s infinite alternate;
+      animation-delay: 4s;
     }
   }
   article {
@@ -84,6 +122,13 @@ main {
       line-height: 24px;
       margin: 28px;
     }
+    .dlBox {
+      display: flex;
+      justify-content: space-around;
+      dt {
+        font-weight: bold;
+      }
+    }
     ul {
       background-color: #d6e9aa;
       border-radius: 28px;
@@ -93,6 +138,9 @@ main {
       display: flex;
       justify-content: space-around;
       font-weight: bold;
+      cursor: pointer;
+      // width: 1270px;
+      // height: 79px;
     }
   }
   .projects {
@@ -100,11 +148,11 @@ main {
       background-color: #d6e9aa;
       margin: 28px;
       padding: 28px;
-      cursor: pointer;
       .FirstLine {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         .fa-angle-up {
           display: none;
         }
@@ -112,18 +160,58 @@ main {
       .desc {
         display: none;
         text-decoration: none;
-        a {
+        .imgBox {
           float: left;
-          margin-right: 14px;
-        }
-        a:last-of-type {
+          display: flex;
           margin-right: 28px;
+          margin-bottom: 28px;
+          a {
+            margin-right: 14px;
+            width: 523px;
+            height: 280px;
+            background-size: 100%;
+            background-position: center;
+            transition: 0.28s;
+            display: flex;
+            justify-content: center;
+            &:hover {
+              background-size: 114%;
+            }
+          }
+          .smallImgBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            div {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 4px;
+              border: 3px solid transparent;
+              transition: 0.14s;
+              img {
+                display: block;
+                height: 120px;
+                overflow: hidden;
+                cursor: pointer;
+              }
+              &:hover {
+                border: 3px solid #85d4be;
+              }
+              &.selected {
+                border: 3px solid #85d4be;
+              }
+            }
+          }
         }
         .dlBox {
           clear: left;
           display: flex;
           justify-content: space-between;
           dl {
+            padding-right: 28px;
             dt {
               font-weight: bold;
             }

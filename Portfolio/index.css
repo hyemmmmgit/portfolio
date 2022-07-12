@@ -1,4 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@-webkit-keyframes nameAnimation {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes nameAnimation {
+  from {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes mainA {
+  from {
+    width: 0;
+  }
+}
+@keyframes mainA {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes upDown {
+  to {
+    transform: translateY(28px);
+  }
+}
+@keyframes upDown {
+  to {
+    transform: translateY(28px);
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -19,6 +49,7 @@ a {
 header {
   font-weight: bold;
   position: fixed;
+  z-index: 99;
   width: 100vw;
   top: 0;
   height: 10vh;
@@ -70,12 +101,39 @@ main .main {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .main h1 {
+main .main .animation {
+  display: flex;
+}
+main .main .animation h1 {
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 511px;
+  -webkit-animation: mainA 3s;
+          animation: mainA 3s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main .main .animation h1 span {
+  opacity: 1;
+  -webkit-animation: nameAnimation 2.8s;
+          animation: nameAnimation 2.8s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+main .main i {
+  font-size: 28px;
+  color: #85d4be;
+  position: relative;
+  top: 210px;
+  z-index: -1;
+  -webkit-animation: upDown 0.75s infinite alternate;
+          animation: upDown 0.75s infinite alternate;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 main article {
   box-shadow: 2px -2px 5px 0px #aee6cb;
@@ -88,6 +146,13 @@ main .aboueMe p {
   line-height: 24px;
   margin: 28px;
 }
+main .aboueMe .dlBox {
+  display: flex;
+  justify-content: space-around;
+}
+main .aboueMe .dlBox dt {
+  font-weight: bold;
+}
 main .aboueMe ul {
   background-color: #d6e9aa;
   border-radius: 28px;
@@ -97,17 +162,18 @@ main .aboueMe ul {
   display: flex;
   justify-content: space-around;
   font-weight: bold;
+  cursor: pointer;
 }
 main .projects section {
   background-color: #d6e9aa;
   margin: 28px;
   padding: 28px;
-  cursor: pointer;
 }
 main .projects section .FirstLine {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 main .projects section .FirstLine .fa-angle-up {
   display: none;
@@ -116,17 +182,59 @@ main .projects section .desc {
   display: none;
   text-decoration: none;
 }
-main .projects section .desc a {
+main .projects section .desc .imgBox {
   float: left;
-  margin-right: 14px;
-}
-main .projects section .desc a:last-of-type {
+  display: flex;
   margin-right: 28px;
+  margin-bottom: 28px;
+}
+main .projects section .desc .imgBox a {
+  margin-right: 14px;
+  width: 523px;
+  height: 280px;
+  background-size: 100%;
+  background-position: center;
+  transition: 0.28s;
+  display: flex;
+  justify-content: center;
+}
+main .projects section .desc .imgBox a:hover {
+  background-size: 114%;
+}
+main .projects section .desc .imgBox .smallImgBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .projects section .desc .imgBox .smallImgBox div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border: 3px solid transparent;
+  transition: 0.14s;
+}
+main .projects section .desc .imgBox .smallImgBox div img {
+  display: block;
+  height: 120px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .projects section .desc .imgBox .smallImgBox div:hover {
+  border: 3px solid #85d4be;
+}
+main .projects section .desc .imgBox .smallImgBox div.selected {
+  border: 3px solid #85d4be;
 }
 main .projects section .desc .dlBox {
   clear: left;
   display: flex;
   justify-content: space-between;
+}
+main .projects section .desc .dlBox dl {
+  padding-right: 28px;
 }
 main .projects section .desc .dlBox dl dt {
   font-weight: bold;

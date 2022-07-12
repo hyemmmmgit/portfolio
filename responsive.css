@@ -1,5 +1,17 @@
 @media screen and (max-width: 768px) {
-  main .projects .dlBox {
+  main .projects section .desc .imgBox {
+    clear: left;
+    flex-direction: column;
+  }
+  main .projects section .desc .imgBox .smallImgBox {
+    padding: 28px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .projects section .desc .imgBox .smallImgBox div + div {
+    margin-left: 8px;
+  }
+  main .projects section .dlBox {
     flex-direction: column;
   }
 }/*# sourceMappingURL=responsive.css.map */
